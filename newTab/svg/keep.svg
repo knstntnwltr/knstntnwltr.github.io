@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>keep</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="keep" stroke="#FFFFFF" stroke-width="2">
+            <path d="M85,130 L85,107.631844 C73.1752633,102.014525 65,89.9619798 65,76 C65,56.6700338 80.6700338,41 100,41 C119.329966,41 135,56.6700338 135,76 C135,89.9619798 126.824737,102.014525 115,107.631844 L115,130 L85,130 Z M85,140 L85,150 L115,150 L115,140 L85,140 Z M75,114.619957 L75,160 L85,160 L85,170 L115,170 L115,160 L125,160 L125,114.619957 C137.63898,106.421499 146,92.1871598 146,76 C146,50.5949015 125.405098,30 100,30 C74.5949015,30 54,50.5949015 54,76 C54,92.1871598 62.36102,106.421499 75,114.619957 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>
