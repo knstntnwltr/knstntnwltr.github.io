@@ -6,6 +6,7 @@
     --bg: #001520;
     --card: #00253b;
     --highlight: #005D94;
+    --clicked: #174561;
 }
 
 ::-webkit-scrollbar { 
@@ -95,7 +96,7 @@ a.cardlink:hover {
 }
 
 a.cardlink:active {
-    background: #1A237E;
+    background: var(--clicked);
 }
 
 @media only screen and (max-width: 768px) {
