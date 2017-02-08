@@ -1,8 +1,8 @@
 :root {
     --primary: #fff;
-    --bg: #222;
-    --card: #333;
-    --highlight: #3366ee;
+    --bg: #001520;
+    --card: #00253b;
+    --highlight: #005D94;
 }
 
 ::-webkit-scrollbar { 
@@ -84,6 +84,7 @@ a.fav-clicker {
 }
 
 /* SPECIAL COLORS */
+/*
 .netflix:hover {
     background: #e80000;}
 .netflix:active {
@@ -108,6 +109,7 @@ a.fav-clicker {
     background: #6A7F83;}
 .movie-blog:active {
     background: #4B5B5F;}
+*/
 
 img.fav-img {
     width: 100%;

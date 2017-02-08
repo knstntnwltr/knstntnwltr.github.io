@@ -3,9 +3,9 @@
 :root {
     --primary: #fff;
     --pr-ts: rgba(255,255,255,0.7);
-    --bg: #222;
-    --card: #333;
-    --highlight: #3366ee;
+    --bg: #001520;
+    --card: #00253b;
+    --highlight: #005D94;
 }
 
 ::-webkit-scrollbar { 
