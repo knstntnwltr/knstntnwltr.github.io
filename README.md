@@ -1,3 +1,3 @@
 # knstntnwltr.github.io
 
-This is literally nothing more than my portfolio.
+This is my landing-page, may add something, but I'm not too sure
