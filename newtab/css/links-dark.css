@@ -1,12 +1,22 @@
+/* LIGHT */
 :root {
     --primary: #222;
     --bg: #eee;
     --card: #fff;
-    --card-text: #000;
     --highlight: #ff3344;
     --highlight-text: #fff;
     --clicked: #bf2633;
 }
+
+/* MOONLIGHT 
+:root {
+    --primary: #fff;
+    --bg: #2B2F3C;
+    --card: #474D5B;
+    --highlight: #ff3344;
+    --highlight-text: #fff;
+    --clicked: #bf2633;
+} */
 
 ::-webkit-scrollbar { 
     display: none; 
@@ -25,6 +35,7 @@ body {
     max-width: 1000px;
 }
 
+/* TITLE */
 h1 {
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
@@ -36,33 +47,17 @@ h1 {
     margin-right: 50px;
 
 }
-
-div.header {
-    background: #0066bb;
-    width: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-div.divider {
-    background: #e0e0e0;
-    height: 2px;
-    width: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-div.container {
+.container {
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 30px;
     overflow: auto;
 }
 
+/* CONTAINER TITLE */
 h2 {
     color: var(--primary);
-    opacity: 0.7;
+    opacity: 0.9;
     font-family: Roboto;
     font-weight: 400;
     margin-left: 10px;
@@ -79,15 +74,13 @@ a.fav-clicker {
     border-radius: 3px;
     padding-bottom: 15px;
     margin: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
 .fav-box:hover {
     background: var(--highlight);
-}
-
-.fav-box:active {
+} .fav-box:active {
     background: var(--clicked);
 }
 
@@ -95,9 +88,14 @@ svg {
     width: 100%;
     height: auto;
     color: var(--primary);
+} .strokes {
+    stroke: var(--primary);
+    transition: 0.3s;
+} .fav-box:hover .strokes {
+    stroke: #fff;
 }
 
-a.fav-text {
+.fav-text {
     margin: 10px;
     color: var(--primary);
     font-family: Roboto;
@@ -105,17 +103,11 @@ a.fav-text {
     text-decoration: none;
     cursor: default;
     transition: 0.1s;
-}
-
-.fav-box:hover > .fav-text{
+} .fav-box:hover > .fav-text{
     color: #fff;
 }
 
-.fav-box:hover .strokes {
-    stroke: #fff;
-}
-
-a.card {
+.card {
     background: var(--card);
     float: left;
     margin: 10px;
@@ -136,12 +128,10 @@ a.card {
     text-decoration: none;
 }
 
-a.card:hover {
+.card:hover {
     background: var(--highlight);
     color: #fff;
-}
-
-a.card:active {
+} .card:active {
     background: var(--clicked);
 }
 
@@ -152,14 +142,18 @@ a.card:active {
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
+    h1 {
         margin-left: 16px;
         margin-right: 16px;
+    }
+    .container {
+        margin-left: 6px;
+        margin-right: 6px;
         padding-bottom: 20px;
     }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 500px) {
     .fav-box {
         width: calc(100%/2 - 20px);
     }
