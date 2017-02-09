@@ -1,9 +1,11 @@
 :root {
-    --primary: #fff;
-    --bg: #001520;
-    --card: #00253b;
-    --highlight: #005D94;
-    --clicked: #174561;
+    --primary: #222;
+    --bg: #eee;
+    --card: #fff;
+    --card-text: #000;
+    --highlight: #dd4450;
+    --highlight-text: #fff;
+    --clicked: #aa333d;
 }
 
 ::-webkit-scrollbar { 
@@ -84,36 +86,13 @@ a.fav-clicker {
     background: var(--highlight);
 }
 
-/* SPECIAL COLORS */
-/*
-.netflix:hover {
-    background: #e80000;}
-.netflix:active {
-    background: #740000;}
+.fav-box:active {
+    background: var(--clicked);
+}
 
-.youtube:hover {
-    background: #E51A00;}
-.youtube:active {
-    background: #A71200}
-
-.g-photos:hover {
-    background: #3577F6;}
-.g-photos:active {
-    background: #224B9A;}
-
-.keep:hover {
-    background: #F5B100;}
-.keep:active {
-    background: #B48200;}
-
-.movie-blog:hover {
-    background: #6A7F83;}
-.movie-blog:active {
-    background: #4B5B5F;}
-*/
-
-img.fav-img {
+svg {
     width: 100%;
+    color: var(--primary);
 }
 
 a.fav-text {
@@ -123,6 +102,15 @@ a.fav-text {
     text-align: center;
     text-decoration: none;
     cursor: default;
+    transition: 0.1s;
+}
+
+.fav-box:hover > .fav-text{
+    color: #fff;
+}
+
+.fav-box:hover .strokes {
+    stroke: #fff;
 }
 
 a.card {

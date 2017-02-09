@@ -1,12 +1,14 @@
 /* MATERIAL DARK */
 
 :root {
-    --primary: #fff;
-    --pr-ts: rgba(255,255,255,0.7);
-    --bg: #001520;
-    --card: #00253b;
-    --highlight: #005D94;
-    --clicked: #174561;
+    --primary: #222;
+    --pr-ts: rgba(0,0,0,0.7);
+    --bg: #eee;
+    --card: #fff;
+    --card-text: #000;
+    --highlight: #dd4450;
+    --highlight-text: #fff;
+    --clicked: #aa333d;
 }
 
 ::-webkit-scrollbar { 
@@ -46,6 +48,7 @@ h1 {
     font-weight: 200;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 10px;
 }
 
 div.container {
@@ -84,7 +87,7 @@ a.cardlink {
     display: inline-block;
     transition: 0.1s;
     
-    color: var(--primary);
+    color: var(--card-text);
     font-family: Roboto;
     font-weight: 400;
     text-align: center;
@@ -93,6 +96,7 @@ a.cardlink {
 
 a.cardlink:hover {
     background: var(--highlight);
+    color: var(--highlight-text);
 }
 
 a.cardlink:active {
