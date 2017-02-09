@@ -64,7 +64,8 @@ h2 {
 }
 
 a.fav-clicker {
-    cursor: default;  }
+    cursor: default;
+}
 
 .fav-box {
     background: var(--card);
