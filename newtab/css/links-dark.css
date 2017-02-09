@@ -142,28 +142,21 @@ svg {
 
 @media only screen and (max-width: 768px) {
     h1 {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     .container {
-        margin-left: 6px;
-        margin-right: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding-bottom: 20px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    body {
-        text-align: center;
-    }
     
     h2 {
         width: calc(100% - 22px);
-    }
-    
-    .card {
-        float: none;
     }
     
     .fav-box {
