@@ -93,6 +93,7 @@ a.fav-clicker {
 
 svg {
     width: 100%;
+    height: auto;
     color: var(--primary);
 }
 
