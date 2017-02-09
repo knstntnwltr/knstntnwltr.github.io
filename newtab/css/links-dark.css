@@ -146,6 +146,7 @@ svg {
         margin-left: 16px;
         margin-right: 16px;
     }
+    
     .container {
         margin-left: 6px;
         margin-right: 6px;
@@ -154,6 +155,14 @@ svg {
 }
 
 @media only screen and (max-width: 500px) {
+    body {
+        text-align: center;
+    }
+    
+    h2 {
+        width: calc(100% - 22px);
+    }
+    
     .fav-box {
         width: calc(100%/2 - 20px);
     }
