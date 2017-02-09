@@ -3,9 +3,9 @@
     --bg: #eee;
     --card: #fff;
     --card-text: #000;
-    --highlight: #dd4450;
+    --highlight: #ff3344;
     --highlight-text: #fff;
-    --clicked: #aa333d;
+    --clicked: #bf2633;
 }
 
 ::-webkit-scrollbar { 
