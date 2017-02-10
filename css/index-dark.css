@@ -1,4 +1,4 @@
-/* MATERIAL DARK */
+/* MATERIAL LIGHT */
 
 :root {
     --primary: #222;
@@ -22,7 +22,6 @@ html {
 
 body {
     margin: 0;
-    padding-top: 20px;
     text-align: center;
     max-width: 100%;
 }
@@ -43,11 +42,11 @@ div.center {
 h1 {
     color: var(--primary);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     font-size: 56px;
     font-weight: 200;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
