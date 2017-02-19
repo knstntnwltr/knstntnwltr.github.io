@@ -41,9 +41,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 56px;
-    margin-top: 20px;
+    margin: 0px;
     margin-left: 50px;
-    margin-bottom: 20px;
     margin-right: 50px;
     cursor: default;
     transition: margin 0.3s;
@@ -64,6 +63,7 @@ h2 {
     font-family: Roboto;
     font-weight: 400;
     margin-left: 10px;
+    margin-bottom: 10px;
     cursor: default;
 }
 
@@ -147,21 +147,31 @@ svg {
 @media only screen and (max-width: 514px) {
     
     h1 {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 10px;
     }
     
     h2 {
-        width: calc(100% - 22px);
+        width: calc(100% - 16px);
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
     }
     
     .container {
         margin-left: 10px;
         margin-right: 10px;
-        padding-bottom: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 0px;
     }
     
-    .fav-box {
-        width: calc(100%/2 - 20px);
+/*  No more shortcuts on mobile*/
+    .short {
+        display: none;
+    }
+    
+    a.card {
+        margin: 8px;
     }
 }
