@@ -8,18 +8,8 @@
     --clicked: #bf2633;
 }
 
-/* MOONLIGHT 
-:root {
-    --primary: #fff;
-    --bg: #2B2F3C;
-    --card: #474D5B;
-    --highlight: #ff3344;
-    --highlight-text: #fff;
-    --clicked: #bf2633;
-} */
-
 ::-webkit-scrollbar { 
-    display: none; 
+    display: none;
 }
 
 html {
