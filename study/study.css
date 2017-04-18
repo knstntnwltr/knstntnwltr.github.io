@@ -1,0 +1,125 @@
+	/* MATERIAL LIGHT */
+
+:root {
+    --primary: #222;
+    --pr-ts: rgba(0,0,0,0.7);
+    --bg: #eee;
+    --card: #fff;
+    --card-text: #000;
+    --highlight: #ff3344;
+    --highlight-text: #fff;
+    --clicked: #bf2633;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+html {
+    background: var(--bg);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+}
+
+div.cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+div.center {
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: 200;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+div.container {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow: auto;
+}
+
+h2 {
+    font-family: Roboto;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+a.text {
+    color: var(--pr-ts);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: default;
+}
+
+a.cardlink {
+    background: var(--card);
+    float: inherit;
+    margin: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: 0.1s;
+    
+    color: var(--card-text);
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.cardlink:hover {
+    background: var(--highlight);
+    color: var(--highlight-text);
+}
+
+a.cardlink:active {
+    background: var(--clicked);
+}
+
+a.footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+    width: 100%;
+    background: var(--highlight);
+    
+    color: var(--card);
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 20px;
+    }
+}
