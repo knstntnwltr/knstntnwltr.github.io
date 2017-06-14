@@ -8,7 +8,7 @@ window.onload = function () {
     document.body.addEventListener('touchmove', function (event) {
         event.preventDefault();
     });
-    setInterval(game, 1000 / 5);
+    setInterval(game, 1000 / 15);
 };
 
 var px = 10;
@@ -49,7 +49,7 @@ function game() {
         ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - 2, gs - 2);
         if (trail[i].x === px && trail[i].y === py) {
             tail = 5;
-            // pts.innerHTML = (tail - 5);
+            pts.innerHTML = (tail - 5);
         }
     }
     trail.push({x: px, y: py});
@@ -59,7 +59,7 @@ function game() {
 
     if (ax === px && ay === py) {
         tail += 2;
-        // pts.innerHTML = (tail - 5);
+        pts.innerHTML = (tail - 5);
         ax = Math.floor(Math.random() * tc);
         ay = Math.floor(Math.random() * tc);
     }
@@ -69,19 +69,15 @@ function game() {
 function keyPush(evt) {
     switch (evt.keyCode) {
         case 37:
-            pts.innerHTML = "left";
             nextDirections.unshift("left");
             break;
         case 38:
-            pts.innerHTML = "up";
             nextDirections.unshift("up");
             break;
         case 39:
-            pts.innerHTML = "right";
             nextDirections.unshift("right");
             break;
         case 40:
-            pts.innerHTML = "down";
             nextDirections.unshift("down");
             break;
     }
@@ -107,18 +103,18 @@ function handleTouchMove(evt) {
     if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
         if (xDiff > 0) {
             // left swipe
-            changeDirection("left");
+            nextDirections.unshift("left");
         } else {
             // right swipe
-            changeDirection("right");
+            nextDirections.unshift("right");
         }
     } else {
         if (yDiff > 0) {
             // swipe up
-            changeDirection("up");
+            nextDirections.unshift("up");
         } else {
             // swipe down
-            changeDirection("down");
+            nextDirections.unshift("down");
         }
     }
     /* reset values */
