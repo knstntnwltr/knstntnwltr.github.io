@@ -8,7 +8,7 @@ window.onload = function () {
     document.body.addEventListener('touchmove', function (event) {
         event.preventDefault();
     });
-    setInterval(game, 1000 / 15);
+    setInterval(game, 1000 / 10);
 };
 
 var px = 10;
@@ -83,6 +83,9 @@ function keyPush(evt) {
     }
 }
 
+// ---- ---- ---- ---- ----
+// -START SWIPE FUNCTIONS--
+
 function handleTouchStart(evt) {
     xDown = evt.touches[0].clientX;
     yDown = evt.touches[0].clientY;
@@ -100,7 +103,7 @@ function handleTouchMove(evt) {
     var xDiff = xDown - xUp;
     var yDiff = yDown - yUp;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
         if (xDiff > 0) {
             // left swipe
             nextDirections.unshift("left");
