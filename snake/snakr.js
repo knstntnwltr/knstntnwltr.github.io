@@ -8,7 +8,7 @@ window.onload = function () {
     document.body.addEventListener('touchmove', function (event) {
         event.preventDefault();
     });
-    setInterval(game, 1000 / 10);
+    setInterval(game, 1000 / 12);
 };
 
 var px = 10;
