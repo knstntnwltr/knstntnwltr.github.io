@@ -6,7 +6,17 @@
     --highlight: #ff3344;
     --highlight-text: #fff;
     --clicked: #bf2633;
-}
+}/
+
+/* DARK /
+:root {
+    --primary: #eee;
+    --bg: #222;
+    --card: #333;
+    --highlight: #ff3344;
+    --highlight-text: #000;
+    --clicked: #bf2633;
+}*/
 
 ::-webkit-scrollbar { 
     display: none;
