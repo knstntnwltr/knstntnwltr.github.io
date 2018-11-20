@@ -1,39 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Maßstab</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#bf2633">
-    <link rel="stylesheet" href="mass.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
-</head>
-<body>
-<div class="card">
-    <label for="val">Momentane Länge in cm?</label>
-    <input type="number" id="val">
-</div>
-<div class="card">
-    <label for="old_mas">Alter Maßstab (1:__)</label>
-    <input type="number" id="old_mas">
-</div>
-<div class="card">
-    <label for="new_mas">Neuer Maßstab (1:__)</label>
-    <input type="number" id="new_mas">
-</div>
-<div id="erg">
-    <button id="submit" onclick="calc()">SUBMIT</button><br>
-    <p>Ergebnis in cm</p>
-    <h2 id="res">0</h2>
-</div>
-<a>V1.04</a>
-</body>
-<script type="application/javascript">
-    function calc() {
-        const val = document.getElementById("val").value;
-        const old_mas = document.getElementById("old_mas").value;
-        const new_mas = document.getElementById("new_mas").value;
-        document.getElementById("res").innerHTML = val * old_mas / new_mas;
-    }
-</script>
+
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Maßstab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#bf2633">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    </head>
+
+    <style>
+        html {
+            text-align: center;
+        }
+        body {
+            margin: 0;
+            text-align: left;
+            background: #eeeeee;
+            padding: 16px;
+            max-width: 800px;
+            font-family: Roboto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 3px;
+            margin: 8px;
+            padding: 8px;
+            overflow: auto;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            margin-top: 1em;
+        }
+
+        input {
+            width: calc(100% - 8px);
+        }
+        button {
+            width: 100%;
+            height: 2em;
+        }
+
+        p#res {
+            width: 100%;
+        }
+
+        #erg {
+            background: #fff;
+            border-radius: 3px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            padding: 8px;
+        }
+    </style>
+
+    <body>
+
+        <div class="card">
+            <label for="val">Momentane Länge in cm?</label><br>
+            <input type="number" id="val">
+        </div>
+        <div class="card">
+            <label for="old_mas">Alter Maßstab (1:__)</label><br>
+            <input type="number" id="old_mas">
+        </div>
+        <div class="card">
+            <label for="new_mas">Neuer Maßstab (1:__)</label><br>
+            <input type="number" id="new_mas">
+        </div>
+        <div id="erg">
+            <button id="submit" onclick="calc()">SUBMIT</button><br>
+            <p>Ergebnis in cm</p>
+            <h2 id="res">0</h2>
+        </div>
+        <a>V1.05</a>
+    </body>
+
+    <script type="application/javascript">
+        function calc() {
+            const val = document.getElementById("val").value;
+            const old_mas = document.getElementById("old_mas").value;
+            const new_mas = document.getElementById("new_mas").value;
+            document.getElementById("res").innerHTML = val * old_mas / new_mas;
+        }
+    </script>
+
 </html>
