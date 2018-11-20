@@ -16,20 +16,18 @@
         }
         body {
             margin: 0;
-            text-align: left;
             background: #eeeeee;
-            padding: 16px;
+            padding: 8px;
             max-width: 800px;
             font-family: Roboto;
+            font-size: 16px;
         }
 
         .card {
-            background: #fff;
-            border-radius: 3px;
+            text-align: left;
             margin: 8px;
             padding: 8px;
             overflow: auto;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         label {
@@ -37,7 +35,8 @@
         }
 
         input {
-            /*width: calc(100% - 8px);*/
+            width: calc(100% - 8px);
+            font-size: 16px;
         }
         button {
             width: 100%;
@@ -48,12 +47,21 @@
             width: 100%;
         }
 
-        #erg {
-            background: #fff;
-            border-radius: 3px;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        .erg {
             margin: 8px;
             padding: 8px;
+        }
+
+        .subm {
+            width: 100%;
+            background: #DD6633;
+            margin: 20px 0 0 0;
+            padding: 10px 30px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        a#version {
+            color: #bbbbbb;
         }
     </style>
 
@@ -71,12 +79,14 @@
             <label for="new_mas">Neuer Maßstab (1:__)</label><br>
             <input type="number" id="new_mas">
         </div>
-        <div id="erg">
-            <button id="submit" onclick="calc()">SUBMIT</button><br>
+        <div class="erg" style="text-align: right;">
+            <a class="subm" onclick="calc()">BERECHNEN</a>
+        </div>
+        <div class="erg">
             <p>Ergebnis in cm</p>
             <h2 id="res">0</h2>
         </div>
-        <a>V1.05</a>
+        <a id="version">V1.07</a>
     </body>
 
     <script type="application/javascript">
@@ -84,7 +94,7 @@
             const val = document.getElementById("val").value;
             const old_mas = document.getElementById("old_mas").value;
             const new_mas = document.getElementById("new_mas").value;
-            document.getElementById("res").innerHTML = val * old_mas / new_mas;
+            document.getElementById("res").innerHTML = Math.floor(val * old_mas / new_mas * 100) / 100;
         }
     </script>
 
