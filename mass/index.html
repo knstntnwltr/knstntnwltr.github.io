@@ -9,7 +9,7 @@
         <meta name="theme-color" content="#bf2633">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
     </head>
 
@@ -17,11 +17,10 @@
         html {
             margin: 0;
             text-align: center;
-            background: #DD6633;
         }
         body {
             margin: 0;
-            background: #eeeeee;
+            background: #fff;
             max-width: 800px;
             font-family: Roboto;
             font-size: 16px;
@@ -31,10 +30,8 @@
         h1 {
             text-align: left;
             margin: 0;
-            padding: 16px 0 16px 24px;
+            padding: 16px 0 16px 16px;
             width: calc(100% - 24px);
-            background: #DD6633;
-            color: #ffffff;
         }
 
         .card {
@@ -96,14 +93,14 @@
             <label for="new_mas">Neuer Maßstab (1:__)</label><br>
             <input type="number" id="new_mas">
         </div>
-        <div class="erg" style="text-align: right;">
+        <div class="erg">
             <a class="subm" onclick="calc()">BERECHNEN</a>
         </div>
         <div class="erg">
             <p>Ergebnis in cm</p>
             <h2 id="res">0</h2>
         </div>
-        <a id="version">V1.20a</a>
+        <a id="version">V1.20b</a>
     </body>
 
     <script type="application/javascript">
