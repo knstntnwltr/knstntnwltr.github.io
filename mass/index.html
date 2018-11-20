@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Maßstab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#bf2633">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
 </head>
 <body>
-$END$
+<div class="card">
+    <label for="val">Momentane Länge in cm?</label>
+    <input type="number" id="val">
+</div>
+<div class="card">
+    <label for="old_mas">Alter Maßstab (1:__)</label>
+    <input type="number" id="old_mas">
+</div>
+<div class="card">
+    <label for="new_mas">Neuer Maßstab (1:__)</label>
+    <input type="number" id="new_mas">
+</div>
+<div id="erg">
+    <button id="submit" onclick="calc()">SUBMIT</button><br>
+    <p>Ergebnis in cm</p>
+    <h2 id="res">0</h2>
+</div>
 </body>
+<script type="application/javascript">
+    function calc() {
+        const val = document.getElementById("val").value;
+        const old_mas = document.getElementById("old_mas").value;
+        const new_mas = document.getElementById("new_mas").value;
+        document.getElementById("res").innerHTML = val * old_mas / new_mas;
+    }
+</script>
 </html>
